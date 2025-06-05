@@ -1,0 +1,12 @@
+<h1>ตะกร้าสินค้า</h1>
+{% if products %}
+<ul>
+  {% for product in products %}
+  <li>{{ product.name }} - {{ product.price }} บาท</li>
+  {% endfor %}
+</ul>
+<a href="/">กลับ</a>
+{% else %}
+<p>ยังไม่มีสินค้าในตะกร้า</p>
+<a href="/">เลือกซื้อสินค้า</a>
+{% endif %}

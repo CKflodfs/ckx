@@ -1,0 +1,8 @@
+ <h1>Admin: รายการสินค้า</h1>
+<a href="/add_product">เพิ่มสินค้า</a>
+<ul>
+{% for product in products %}
+  <li>{{ product.name }} - {{ product.price }} บาท</li>
+{% endfor %}
+</ul>
+<a href="/">กลับหน้าแรก</a>
